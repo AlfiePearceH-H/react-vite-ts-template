@@ -24,5 +24,5 @@ npm run format  # Formats said file
 - React, Vite, TS
 - ESLint
 - Prettier
-- Husk & Commitlint
+- Husky & Commitlint
 - Company css files
