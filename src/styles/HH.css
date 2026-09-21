@@ -1,0 +1,22 @@
+:root {
+    --white: #fff;
+    --black: #000;
+
+    --yellow: #fff659;
+    --blue: #263846;
+    --rasberry: #9e0085;
+    --light-grey: #efefef;
+
+    --header-background: repeating-linear-gradient(45deg, transparent 0 15px, var(--yellow) 13px 30px);
+
+    --fg: var(--black);
+    --fgp: var(--blue);
+
+    --bg: var(--white);
+    --bg1: var(--light-grey);
+    --bgp: var(--raspberry);
+}
+.primary {
+    background-color: var(--bgp);
+    color: var(--fgp)
+}
