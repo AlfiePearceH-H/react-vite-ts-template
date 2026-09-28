@@ -1,0 +1,21 @@
+{
+    "codeQL.githubDatabase.download": "never",
+    "outline.showClasses": true,
+    "outline.showMethods": true,
+    "outline.showFunctions": true,
+    "outline.showConstructors": true,
+    "outline.showProperties": true,
+    "outline.showVariables": false,
+    "outline.showFields": true,
+    "outline.showNamespaces": true,
+    "outline.showModules": true,
+    "outline.showFiles": false,
+
+    "outline.icons": true,
+
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.symbolPath": "on",
+    "breadcrumbs.filePath": "on",
+
+    "explorer.compactFolders": false
+}
