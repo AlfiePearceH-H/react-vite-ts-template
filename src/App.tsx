@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router'
-import './App.css'
 import MainPage from './pages/mainpage'
 
 function App() {
