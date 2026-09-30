@@ -1,7 +1,4 @@
 :root {
-    --white: #fff;
-    --black: #000;
-
     --yellow: #fff659;
     --blue: #263846;
     --raspberry: #9e0085;
@@ -9,14 +6,11 @@
 
     --header-background: repeating-linear-gradient(45deg, transparent 0 15px, var(--yellow) 13px 30px);
 
-    --fg: var(--black);
-    --fgp: var(--blue);
+    --fg: #000;
 
-    --bg: var(--white);
-    --bg1: var(--light-grey);
-    --bgp: var(--raspberry);
+    --bg: #fff;
 }
-.primary {
+.primary[data-company="H&H"] {
     background-color: var(--bgp);
     color: var(--fgp);
 }

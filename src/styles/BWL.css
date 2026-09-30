@@ -1,0 +1,8 @@
+:root {
+    --bwl-blue: #007ac8;
+}
+.primary[data-company="BWL"] {
+    background: none;
+    background-color: var(--bwl-blue);
+    color: white;
+}
