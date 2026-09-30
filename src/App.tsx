@@ -1,7 +1,13 @@
+import { Route, Routes } from 'react-router'
 import './App.css'
+import MainPage from './pages/mainpage'
 
 function App() {
-  return null
+  return (
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+    </Routes>
+  )
 }
 
 export default App
