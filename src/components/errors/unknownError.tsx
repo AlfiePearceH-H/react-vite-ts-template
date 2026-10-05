@@ -1,5 +1,10 @@
 import './error.css'
-export function Unkown({error} : {error: string}) {
+
+interface UnkownErrorProps {
+    error: string
+}
+
+export function UnkownError({error = "An unkown error has occured"} : UnkownErrorProps) {
     return (
         <div id="errorContainer">
             <p id="unkownErrorMessage">{error}</p>

@@ -1,3 +1,3 @@
-export { PermissionDenied } from './401'
-export { Unfound } from './404'
-export { Unkown } from './unknown'
+export { Unauthorised } from './unauthorised'
+export { NotFound } from './notFound'
+export { UnkownError } from './unknownError'
