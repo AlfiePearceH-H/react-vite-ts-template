@@ -23,13 +23,13 @@ Vite prints the local development URL in the terminal (usually <http://localhost
 
 ## Available commands
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the Vite development server with hot module replacement. |
-| `npm run build` | Type-check the project and create a production build in `dist/`. |
-| `npm run preview` | Serve the production build locally. Run `npm run build` first. |
-| `npm run lint` | Check the project with ESLint. |
-| `npm run format` | Format the files in `src/` with Prettier. |
+| Command           | Description                                                      |
+| ----------------- | ---------------------------------------------------------------- |
+| `npm run dev`     | Start the Vite development server with hot module replacement.   |
+| `npm run build`   | Type-check the project and create a production build in `dist/`. |
+| `npm run preview` | Serve the production build locally. Run `npm run build` first.   |
+| `npm run lint`    | Check the project with ESLint.                                   |
+| `npm run format`  | Format the files in `src/` with Prettier.                        |
 
 ## Project layout
 
