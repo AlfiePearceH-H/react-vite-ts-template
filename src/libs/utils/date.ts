@@ -15,3 +15,11 @@ export function formatDateTime(date: Date | string, locale = "en-GB"): string {
     minute: "2-digit",
   }).format(new Date(date));
 }
+
+export const getFinancialYear = (dateString: string): number => {
+  const date = new Date(dateString);
+  const year = date.getFullYear();
+  return date.getMonth() >= 4
+      ? year
+      : year - 1
+}
