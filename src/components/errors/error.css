@@ -1,0 +1,17 @@
+#errorContainer {
+    background-color: #efefef;
+    border-radius: 25px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+#errorContainer p,
+#errorContainer h1 {
+    padding: 0;
+    margin: 0;
+}
