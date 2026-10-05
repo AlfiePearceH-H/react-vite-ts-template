@@ -1,14 +1,18 @@
 :root {
-    --yellow: #fff659;
-    --blue: #263846;
-    --raspberry: #9e0085;
-    --light-grey: #efefef;
+  --yellow: #fff659;
+  --blue: #263846;
+  --raspberry: #9e0085;
+  --light-grey: #efefef;
 
-    --hh-header-background: repeating-linear-gradient(45deg, transparent 0 15px, var(--yellow) 13px 30px);
+  --hh-header-background: repeating-linear-gradient(
+    45deg,
+    transparent 0 15px,
+    var(--yellow) 13px 30px
+  );
 
-    --hh-font-family: calibri sans-serif
+  --hh-font-family: calibri sans-serif;
 }
 .primary[data-company="H&H"] {
-    background-color: var(--bgp);
-    color: var(--fgp);
+  background-color: var(--bgp);
+  color: var(--fgp);
 }

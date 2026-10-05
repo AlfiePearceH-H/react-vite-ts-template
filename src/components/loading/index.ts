@@ -1,1 +1,1 @@
-export { default as Loading } from './component'
+export { default as Loading } from "./component";
