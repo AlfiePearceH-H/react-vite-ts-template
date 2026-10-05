@@ -39,8 +39,8 @@ Vite prints the local development URL in the terminal (usually <http://localhost
 ├── src/
 │   ├── components/         Reusable, self-contained component directories
 │   ├── libs/               Shared data and utility functions
+│   │   ├── data.ts         Data-related operations, such as API calls
 │   │   └── utils/          Date, money, name, number, and file-size helpers
-│   │   └── data.ts         Location for data related operations e.g. API calls
 │   ├── pages/              Page-level components
 │   ├── styles/             Shared and company-specific stylesheets
 │   ├── App.tsx             Application routes
