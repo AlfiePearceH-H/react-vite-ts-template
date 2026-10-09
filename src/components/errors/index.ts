@@ -1,3 +1,6 @@
 export { Unauthorised } from './unauthorised'
 export { NotFound } from './notFound'
 export { UnkownError } from './unknownError'
+export { Forbidden } from './forbidden'
+export { ServerError } from './server'
+export { ServiceUnavailable} from './serviceUnavailable' 

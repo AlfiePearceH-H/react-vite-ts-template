@@ -7,3 +7,6 @@ export { GetUser } from "./auth";
 
 // filePicker/index.ts
 export {FilePicker, fileToBase64, fileToPowerAutomateFile, formatFileSize, type SelectedFile} from './filePicker'
+
+// errors/index.ts
+export * as ErrorComponent from './errors'
