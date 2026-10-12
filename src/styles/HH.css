@@ -10,7 +10,7 @@
     var(--yellow) 13px 30px
   );
 
-  --hh-font-family: calibri sans-serif;
+  --hh-font-family: "MyFont", calibri, sans-serif !important;
 }
 .primary[data-company="H&H"] {
   background-color: var(--bgp);
