@@ -78,9 +78,7 @@ export default function MultiSelect({
 
   const updatePosition = useCallback(() => {
     const trigger = triggerRef.current;
-    if (!trigger) {
-      return;
-    }
+    if (!trigger) return;
 
     const bounds = trigger.getBoundingClientRect();
     const viewportPadding = 8;
@@ -98,8 +96,7 @@ export default function MultiSelect({
     const maxHeight = Math.min(384, window.innerHeight - viewportPadding * 2);
     const spaceBelow = window.innerHeight - bounds.bottom - viewportPadding;
     const spaceAbove = bounds.top - viewportPadding;
-    const openAbove =
-      spaceBelow < Math.min(200, maxHeight) && spaceAbove > spaceBelow;
+    const openAbove = spaceBelow < Math.min(200, maxHeight) && spaceAbove > spaceBelow;
     const availableHeight = openAbove ? spaceAbove : spaceBelow;
 
     setPosition({
