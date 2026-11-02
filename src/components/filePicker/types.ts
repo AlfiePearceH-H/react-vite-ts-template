@@ -8,5 +8,7 @@ export interface SelectedFile {
 export interface FilePickerProps {
     multiple?: boolean;
     accept?: string;
+    disabled?: boolean;
+    buttonLabel?: string;
     onFilesSelected?: (files: SelectedFile[]) => void;
 }

@@ -2,7 +2,13 @@ import { useRef } from "react";
 import "./FilePicker.css";
 import type { FilePickerProps, SelectedFile } from "./types";
 
-export default function FilePicker({multiple = false, accept = "*", onFilesSelected}: FilePickerProps) {
+export default function FilePicker({
+    multiple = false,
+    accept = "*",
+    disabled = false,
+    buttonLabel,
+    onFilesSelected,
+}: FilePickerProps) {
     const inputRef = useRef<HTMLInputElement>(null);
 
     const handleFileChange = (
@@ -26,8 +32,9 @@ export default function FilePicker({multiple = false, accept = "*", onFilesSelec
                 type="button"
                 className="file-picker-button"
                 onClick={() => inputRef.current?.click()}
+                disabled={disabled}
             >
-                Upload File
+                {buttonLabel ?? (multiple ? "Upload Files" : "Upload File")}
             </button>
 
             <input
@@ -35,6 +42,7 @@ export default function FilePicker({multiple = false, accept = "*", onFilesSelec
                 type="file"
                 accept={accept}
                 multiple={multiple}
+                disabled={disabled}
                 onChange={e => {
                     handleFileChange(e);
                     e.target.value = "";
