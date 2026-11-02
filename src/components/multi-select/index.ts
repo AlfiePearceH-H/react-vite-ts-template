@@ -1,0 +1,1 @@
+export { default as MultiSelect, Option, OptGroup } from './multi-select'
