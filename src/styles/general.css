@@ -1,13 +1,7 @@
+/* General */
 * {
   box-sizing: border-box;
   font-family: var(--hh-font-family);
-}
-
-button,
-input,
-textarea,
-select {
-  font: inherit;
 }
 
 html,
@@ -17,6 +11,43 @@ body,
   margin: 0;
 }
 
-body {
-  min-height: 100vh;
+/* Interactive */
+button {
+  background-color: var(--blue);
+  color: white;
+  border: 1px solid var(--blue);
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 0 10px;
+}
+button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+button:disabled {
+  background-color: var(--light-grey);
+  color: black;
+  border: 1px solid black;
+  opacity: 50%;
+}
+
+/* General Classes */
+.sticky {
+    position: sticky;
+    top: 0;
+}
+.sticky.bottom {
+    position: sticky;
+    bottom: 0;
+}
+
+/* tables */
+table {text-align: left;}
+tbody:nth-child(odd) {background-color: white;}
+tbody:nth-child(even) {background-color: #efefef;}
+thead {
+  position: sticky;
+  background-color: #cfcfcf;
+  top: 0;
 }
