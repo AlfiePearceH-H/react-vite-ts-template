@@ -12,7 +12,7 @@ body,
 }
 
 /* Interactive */
-button {
+.btn--primary {
   background-color: var(--blue);
   color: white;
   border: 1px solid var(--blue);
@@ -20,12 +20,12 @@ button {
   cursor: pointer;
   padding: 0 10px;
 }
-button:hover {
+.btn--primary:hover {
   background-color: white;
   color: black;
   border: 1px solid black;
 }
-button:disabled {
+.btn--primary:disabled {
   background-color: var(--light-grey);
   color: black;
   border: 1px solid black;
