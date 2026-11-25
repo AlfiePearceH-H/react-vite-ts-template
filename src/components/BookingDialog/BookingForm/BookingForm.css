@@ -1,0 +1,32 @@
+.search-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 1rem;
+
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+
+    background: white;
+
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.field label {
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.field input,
+.field select {
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}

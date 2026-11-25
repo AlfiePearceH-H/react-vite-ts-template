@@ -1,0 +1,84 @@
+.booking-dialog__backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgb(0 0 0 / 45%);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 0;
+    z-index: 9999;
+    animation: backdropFade .2s ease;
+}
+
+.booking-dialog {
+    width: min(1100px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 25px 60px rgb(0 0 0 / 25%);
+    animation: slideDown .3s ease;
+    padding-bottom: 10px;
+}
+
+.booking-dialog__header {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+}
+
+.booking-dialog__close {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 1.4rem;
+}
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes backdropFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main-page {
+    max-width: 900px;
+    margin: auto;
+}
+
+.booking-form {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+}
+.action-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.booking-summary {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-left: 4px solid var(--blue);
+    background: #eef7ff;
+    border-radius: 8px;
+}

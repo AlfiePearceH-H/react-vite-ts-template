@@ -1,0 +1,107 @@
+.availability-card {
+    background: white;
+    border-radius: 16px;
+    margin-top: 2rem;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 8%);
+    overflow: hidden;
+}
+
+.availability-header {
+    padding: 1.25rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #ececec;
+}
+
+.day-tabs {
+    display: flex;
+    gap: .5rem;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.day-tab {
+    min-width: 100px;
+    border-radius: 999px;
+    background: #f4f6f8;
+    border: none;
+    color: #444;
+}
+
+.day-tab.active {
+    background: var(--blue);
+    color: white;
+}
+
+.slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.slot-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: .25rem;
+    min-height: 50px;
+    background: white;
+    border: 1px solid #dbe1e8;
+    border-radius: 12px;
+    color: black;
+}
+
+.slot-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+    border: 1px solid #dbe1e8;
+    background-color: #dbe1e8;
+}
+
+.slot-card.active {
+    background: #0078d4;
+    border-color: #0078d4;
+    color: white;
+    transform: scale(1.03);
+}
+
+.slot-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgb(0 0 0 / 45%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn .2s ease;
+}
+
+.slot-modal {
+    background: white;
+    width: min(700px, 95vw);
+    border-radius: 16px;
+
+    box-shadow: 0 20px 60px rgb(0 0 0 / 20%);
+    overflow: hidden;
+    animation: popIn .2s ease;
+}
+
+.day-tab,
+.slot-card,
+.action-bar button {
+    transition: all .15s;
+}
+.day-tab:hover {
+    background: #e8eef7;
+    transform: translateY(-1px);
+}
+
+.day-tab.active,
+.day-tab.active:hover {
+    background: var(--blue);
+    color: white;
+}

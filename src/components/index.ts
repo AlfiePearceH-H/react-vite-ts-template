@@ -13,3 +13,6 @@ export { MultiSelect, Option, OptGroup } from './multi-select'
 
 // errors/index.ts
 export * as ErrorComponent from './errors'
+
+// BookingDialog/index.ts
+export * from "./BookingDialog"
